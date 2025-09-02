@@ -9,73 +9,55 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
     <div class="container">
-        <a class="navbar-brand fw-bold" href="/">
-            <span class="me-2">&#128666;</span>DEL-CON
-        </a>
+        <a class="navbar-brand fw-bold" href="/">&#128666; DEL-CON</a>
         <div class="navbar-nav">
-            <a class="nav-link" href="#book-delivery">Book Delivery</a>
-            <a class="nav-link" href="#track">Track Parcel</a>
+            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" href="/services">Services & Pricing</a>
+            <a class="nav-link" href="/booking">Book & Track</a>
         </div>
     </div>
 </nav>
 
-<section class="hero-section bg-gradient-primary text-white py-5 text-center">
-    <div class="container">
-        <h1 class="display-4 fw-bold mb-4">Send Parcels with DEL-CON</h1>
-        <p class="lead mb-4">Fast & secure parcel delivery in <b>[YOUR AREA/CITY]</b></p>
+<section class="hero-section fade-in bg-gradient-primary text-white py-5 d-flex align-items-center">
+    <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between">
+        <div class="text-center text-lg-start mb-4 mb-lg-0 col-lg-6">
+            <h1 class="display-4 fw-bold mb-4">Send Parcels with <br> DEL-CON</h1>
+            <p class="lead mb-4">Fast & secure parcel delivery in <b>Pune</b></p>
+            <a href="/booking" class="btn btn-light btn-lg">Book a Delivery</a>
+        </div>
+        <div class="col-lg-5 text-center">
+            <img src="/images/hero-delivery.jpg" alt="DEL-CON Delivery" class="img-fluid rounded shadow">
+        </div>
     </div>
 </section>
 
-<section id="book-delivery" class="pt-5">
+<section id="about" class="py-5 fade-in bg-light">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <h2 class="fw-bold mb-4">Book a Delivery</h2>
-                <form id="bookingForm" class="bg-light p-4 rounded shadow">
-                    <div class="mb-3">
-                        <label for="senderName" class="form-label">Your Name & Contact</label>
-                        <input type="text" class="form-control" id="senderName" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="pickupAddress" class="form-label">Pickup Address</label>
-                        <input type="text" class="form-control" id="pickupAddress" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="deliveryAddress" class="form-label">Delivery Address</label>
-                        <input type="text" class="form-control" id="deliveryAddress" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="packageDesc" class="form-label">Package Description</label>
-                        <input type="text" class="form-control" id="packageDesc" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="deliveryDate" class="form-label">Preferred Delivery Date</label>
-                        <input type="date" class="form-control" id="deliveryDate" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Book Delivery</button>
-                    <div id="bookingMsg" class="mt-3"></div>
-                </form>
+        <h2 class="fw-bold mb-4 text-primary text-center">About Us</h2>
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-6">
+                <p class="lead">
+                    <b>DEL-CON</b> is your trusted partner for parcel delivery in Pune.  
+                    Combining technology, dedicated riders, and responsive support, your parcels arrive fast and safely.
+                </p>
+                <ul class="list-group list-group-flush mt-4">
+                    <li class="list-group-item">✔️ Friendly, verified delivery staff</li>
+                    <li class="list-group-item">✔️ Real-time parcel tracking and notifications</li>
+                    <li class="list-group-item">✔️ Businesses & individuals welcome</li>
+                    <li class="list-group-item">✔️ Transparent pricing, no hidden fees</li>
+                </ul>
+            </div>
+            <div class="col-md-5 text-center">
+                <img src="/images/about-us.jpg" alt="About DEL-CON" class="img-fluid rounded shadow">
             </div>
         </div>
     </div>
 </section>
 
-<section id="track" class="py-5 bg-light">
-    <div class="container">
-        <h2 class="fw-bold mb-4 text-center">Track Your Parcel</h2>
-        <form id="trackForm" class="d-flex gap-3 justify-content-center">
-            <input type="text" class="form-control w-25" id="trackingId" placeholder="Enter tracking code" required>
-            <button type="submit" class="btn btn-outline-primary">Track</button>
-        </form>
-        <div id="trackingResult" class="text-center mt-4"></div>
-    </div>
-</section>
-
-<footer class="bg-dark text-white py-4 text-center">
+<footer class="bg-dark text-white py-4 text-center fade-in">
     <div class="container">
         &copy; 2025 DEL-CON Delivery. Fast. Reliable. Local.
     </div>
 </footer>
-<script src="/js/app.js"></script>
 </body>
 </html>

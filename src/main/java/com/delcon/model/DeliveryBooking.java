@@ -5,7 +5,7 @@ import java.time.LocalDate;
 @Entity
 public class DeliveryBooking {
     @Id @GeneratedValue
-    private Long id;
+    private Long id  ;
     private String senderName;
     private String pickupAddress;
     private String deliveryAddress;
